@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soham Sawant - Data Scientist Resume</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9fb;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      background: white;
+      margin: 20px auto;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #2f29e1;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #555;
+    }
+    section {
+      margin-bottom: 35px;
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: #2f29e1;
+      border-bottom: 3px solid #7b47d5;
+      padding-bottom: 6px;
+      margin-bottom: 20px;
+      letter-spacing: 1.1px;
+    }
+    /* Contact info */
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    .contact-info a {
+      color: #1d6aed;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .contact-info a:hover {
+      color: #2f29e1;
+    }
+    /* Summary */
+    .summary p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #444;
+    }
+    /* Skills */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .skill {
+      flex: 1 1 200px;
+      max-width: 250px;
+    }
+    .skill-name {
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #333;
+    }
+    .skill-bar {
+      background-color: #e0e0e0;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 18px;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .skill-level {
+      height: 100%;
+      background: linear-gradient(90deg, #7b47d5, #2f29e1);
+      border-radius: 20px 0 0 20px;
+      width: 0;
+      animation: fillBar 2s forwards;
+    }
+    @keyframes fillBar {
+      to {
+        width: var(--skill-width);
+      }
+    }
+    /* Education & Experience & Projects */
+    .item {
+      margin-bottom: 20px;
+    }
+    .item h3 {
+      font-size: 1.2rem;
+      color: #2f29e1;
+      margin-bottom: 4px;
+    }
+    .item .sub {
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 6px;
+    }
+    .item .date {
+      font-style: italic;
+      font-size: 0.9rem;
+      color: #888;
+      margin-bottom: 8px;
+    }
+    .item p {
+      color: #444;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    ul.project-list {
+      list-style-type: disc;
+      margin-left: 20px;
+      color: #444;
+    }
+    ul.project-list li {
+      margin-bottom: 8px;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 20px;
+      }
+      .skills-list {
+        justify-content: flex-start;
+      }
+      .skill {
+        max-width: 100%;
+      }
+      .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <h1>Soham Sawant</h1>
+      <p>Junior Data Scientist</p>
+    </header>
+
+    <div class="contact-info" aria-label="Contact Information">
+      <div>Email: <a href="mailto:sohamsawant3143@gmail.com">sohamsawant3143@gmail.com</a></div>
+      <div>Phone: <a href="tel:+918975215891">+91 89752 15891</a></div>
+      <div>LinkedIn: <a href="https://www.linkedin.com/in/soham-sawant-165182303/" target="_blank" rel="noopener noreferrer">linkedin.com/in/soham-sawant</a></div>
+      <div>GitHub: <a href="https://github.com/sohamsawant3143-max" target="_blank" rel="noopener noreferrer">github.com/sohamsawant3143-max</a></div>
+    </div>
+
+    <section class="summary" aria-labelledby="summary-title">
+      <h2 id="summary-title">Professional Summary</h2>
+      <p>
+        Passionate and detail-oriented Junior Data Scientist with hands-on experience in data analysis, machine learning, and visualization. Skilled in Python, SQL, and data-driven problem solving. Eager to contribute to impactful projects and grow in the data science field.
+      </p>
+    </section>
+
+    <section class="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <div class="skill-name">Python</div>
+          <div class="skill-bar" aria-label="Python skill level">
+            <div class="skill-level" style="--skill-width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Machine Learning</div>
+          <div class="skill-bar" aria-label="Machine Learning skill level">
+            <div class="skill-level" style="--skill-width: 80%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Data Visualization</div>
+          <div class="skill-bar" aria-label="Data Visualization skill level">
+            <div class="skill-level" style="--skill-width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">SQL</div>
+          <div class="skill-bar" aria-label="SQL skill level">
+            <div class="skill-level" style="--skill-width: 75%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">HTML & CSS</div>
+          <div class="skill-bar" aria-label="HTML and CSS skill level">
+            <div class="skill-level" style="--skill-width: 70%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="education" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <div class="item">
+        <h3>B.Tech in Computer Science (AI & DS)</h3>
+        <div class="sub">Parul University</div>
+        <div class="date">2025 - 2029 (Expected)</div>
+        <p>Focused on Artificial Intelligence and Data Science coursework including machine learning, data mining, and big data analytics.</p>
+      </div>
+      <div class="item">
+        <h3>High School</h3>
+        <div class="sub">R.P.D Junior College</div>
+        <div class="date">Completed 2024</div>
+      </div>
+    </section>
+
+    <section class="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <div class="item">
+        <h3>Data Analysis with Python</h3>
+        <p>Analyzed sales data to extract actionable insights and created visualizations using matplotlib and seaborn.</p>
+      </div>
+      <div class="item">
+        <h3>Machine Learning Model</h3>
+        <p>Built a predictive model using scikit-learn to forecast customer churn with 85% accuracy.</p>
+      </div>
+      <div class="item">
+        <h3>Portfolio Website</h3>
+        <p>Designed and developed a personal portfolio website using HTML, CSS, and JavaScript to showcase projects and skills.</p>
+      </div>
+    </section>
+
+    <section class="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">Experience</h2>
+      <div class="item">
+        <h3>Data Science Intern</h3>
+        <div class="sub">ABC Tech Solutions</div>
+        <div class="date">June 2024 - August 2024</div>
+        <p>Worked on cleaning and preprocessing large datasets, assisted in building machine learning models, and created dashboards for data visualization.</p>
+      </div>
+      <!-- Add more experience here if needed -->
+    </section>
+  </div>
+</body>
+</html>
